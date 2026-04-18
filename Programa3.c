@@ -1,12 +1,12 @@
-#include <stdio.h>
-int main () 
+#include <stdio.h> 
+int main ()
 {
-  int lista[5] = {10, 8, 5, 8, 7}; // Se declara e inicializa el arreglo unidimensional int indice=0;
-  printf("\tLista\n");// Acceso a cada elemento del arreglo unidimensional usando for
-  for (indice = 0 ; indice < 5 ; indice++) 
-  {
-    printf("\nCalificación del alumno %d es %d", indice+1, lista[indice]); 
-  }
-  printf("\n");
-  return 0; 
+  char *ap, c = 'a'; // Se declara el apuntador ap de tipo alfanumérico
+  ap = &c; //Se le asigna al apuntador la dirección de memoria de la variable c 
+  printf("Carácter: %c\n",*ap); /* Se imprime el contenido de la variable a la que apunta el apuntador ap */ 
+  printf("Código ASCII: %d\n",*ap); /*Se imprime el código ASCII del carácter
+  ‘a’ */
+  printf("Dirección de memoria: %d\n",ap);/*Se imprime la dirección de
+  memoria que almacena el apuntador*/
+  return 0;
 }
